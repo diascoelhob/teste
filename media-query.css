@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@font-face {
+    font-family: nato-sans;
+    src: url(../fontes/Noto_Sans/static/NotoSans-Light.ttf);
+}
+
+/* 
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 600px) {
+    header, main {
+        background-color: white;
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    header {
+        margin-top: 100px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    main {
+        padding-bottom: 100px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    body {
+        background-color: #459cbf2a;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header, main {
+        background-color: white;
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
+        transition: all 0.3s ease;
+    }
+
+    header {
+        margin-top: 100px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    main {
+        padding-bottom: 100px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    body {
+        background-color: #459cbf2a;
+    }
+}
